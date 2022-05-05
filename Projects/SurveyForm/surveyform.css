@@ -1,0 +1,121 @@
+*{
+    font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Verdana,Tahoma,sans-serif, sans-serif;  
+}
+body{
+    font-family: Bitter,serif;
+}
+
+.title {
+    text-align: center;
+    color: #000000;
+    background-color: mistyrose;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.main {
+    background-image: url(https://images.unsplash.com/photo-1518998053901-5348d3961a04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YXJ0JTIwbXVzZXVtfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 24px;
+    color: gray;
+}
+
+/* .main > h1,
+.main > p{
+    text-align: center;
+    font-family: 35px;
+    z-index: 2;
+    position: relative;
+} */
+ 
+.main-content {
+    background-color: linen;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    z-index: 2;
+    position: relative
+}
+
+#name, #email, #age, #dropdown, #comment {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 5px 10px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+label[for=name], 
+label[for=email],
+label[for=age],
+label[for=dropdown],
+label[for=comment] {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+#comment {
+  min-height: 180px;
+}
+
+label[for=comment]{
+  margin-top: 30px
+}
+
+input[type="checkbox" i]{
+    height: 20px;
+    width: 20px;
+}
+
+input[type="radio" i] {
+    height: 20px;
+    width: 20px;
+}
+
+fieldset input {
+    height: 20px;
+    width: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  #submit {
+    display: block;
+    width: 100%;
+    background: tan;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 0;
+    color: #ffffff;
+    font-size: 20px;
+    border-color: #000000;
+  }
+
+  .thank-you img{
+      width: max-content;
+      
+  }
+
+  .thank-you {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
