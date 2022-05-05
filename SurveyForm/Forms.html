@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<header>
+<script src="scripts.js"></script>
+<link rel="stylesheet" href="surveyform.css"/>
+</header>
+<body class="main">
+    <div class="title">
+        <h1 id="title">Museum Survey Form</h1>
+        <p id="description">Thanks so much for filling out our survey.<br> We’ve created it to in order to learn more about you and what would you like to see in our museum.</p>
+    </div>
+
+    <div class="main-content">
+        <form action="thankyou.html" method="get" class="form-content">
+            <form id="survey-form">
+
+                
+                    <label for="name" id="name-label">Name*</label>
+                    <input id= “name” name=“name” type=“text” placeholder “Enter your name” required/>
+                    <input id="name" name="name" type="text" placeholder="Enter your name" required/>
+    
+                    <label for="email" id="email-label">Email*</label>
+                    <input id="email" name="email" type="email" placeholder="Enter your email" required/>
+    
+                    <label for="age" id="age-label">Age</label>
+                    <input id="age" name="age" type="age"  placeholder="Age" required/>
+
+                    <label for="gender" id="gender">Gender*</label><br>
+                    <input type="radio" name="gender" id="female" value="female"/><label for="female">Female</label>
+                    <input type="radio" name="gender" id="male" value="male"/><label for="male">Male</label><br><br>
+
+
+                    <label for="frequency" id="frequency">How often have you visited us? You can be approximate.</label><br><br>
+                    <input type="radio" name="frequency" id="never-been" value="never-been"/><label for="never-been">Never been</label><br>
+                    <input type="radio" name="frequency" id="once-or-twice" value="once-or-twice"/><label for="once-or-twice">Once or twice</label><br>
+                    <input type="radio" name="frequency" id="few-times" value="few-times"/><label for="few-times">A few times a year</label><br>
+                    <input type="radio" name="frequency" id="monthly" value="monthly"/><label for="monthly">Monthly</label><br>
+                    <input type="radio" name="frequency" id="weekly" value="weekly"/><label for="weekly">Weekly</label><br>
+                    <input type="radio" name="frequency" id="live-here" value="live-here"/><label for="live-here">I practically live here!</label><br>
+
+                    <p>What kind of activities do you like?</p>
+                    <input type="checkbox" id="exhibits" name="exhibits" value="exhibits"><label for="exhibits">Exhibits</label><br>
+                    <input type="checkbox" id="presentations" name="presentations" value="presentations"><label for="presentations">Presentations</label><br>
+                    <input type="checkbox" id="lectures" name="lectures" value="lectures"><label for="lectures">Lectures</label><br>
+                    <input type="checkbox" id="games" name="games" value="games"><label for="games">Games</label><br><br>
+
+                    <label for="number" id="number-label">Rate your overall museum experience from 1 to 10</label>
+                    <input id="number" type="number" min="1" max="10" required placeholder=""/><br><br>
+
+                    <label for="most-enjoy" id="most-enjoy">What do you MOST enjoy about the Museum?</label><br>
+                    <input type="checkbox" id="animal-exhibit" name="animal-exhibit" value="animal-exhibit"><label for="animal-exhibit">Animal Exhibit</label><br>
+                    <input type="checkbox" id="history-exhibit" name="history-exhibit" value="history-exhibit"><label for="history-exhibit">History Exhibit</label><br>
+                    <input type="checkbox" id="science-exhibit" name="science-exhibit" value="science-exhibit"><label for="science-exhibit">Science Exhibit</label><br>
+                    <input type="checkbox" id="animal-exhibit" name="animal-exhibit" value="animal-exhibit"><label for="animal-exhibit">Animal Exhibit</label><br>
+                
+
+                
+                    <label for="dropdown">In general, do you like the Museum?</label>
+                    <select id="dropdown">
+                        <input type="dropdown" option name="dropdown" value="yes">Yes</option>
+                        <input type="dropdown" option name="dropdown" value="no">No</option>
+                    </select>
+                
+                    <label for="comment">Anything else that you would like to see? Do you have a show suggestion?</label>
+                    <textarea rows="4" col="50" id="comment">Leave your comments and suggestions here...</textarea>
+                
+           
+                
+
+                
+                    <fieldset class="recommend">
+                        <legend>Would you recommend visiting our museum to a friend?</legend>
+                        <input type="radio" name="recommend" id="definitely" value="definitely"/><label for="definitely">Definitely</label>
+                        <input type="radio" name="recommend" id="maybe" value="maybe"/><label for="maybe">Maybe</label>
+                        <input type="radio" name="recommend" id="not-sure" value="not-sure"/><label for="definitely">Not Sure</label>
+                    </fieldset>
+
+                <div class="button">
+                    <button type="submit" id="submit">Submit</button>
+                </div>    
+                    
+            </form>
+            
+        </form>
+    </div>
+</body>
